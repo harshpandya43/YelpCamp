@@ -2,6 +2,9 @@ var express = require('express');
 var app = express();
 
 
-app.listen(3000, function(){
-    console.log("Server Started...");
+app.get("/", function(req, res){
+    res.send("This is the landing page");
 })
+app.listen(3000, function(){
+    console.log("Yelp Camp Server Started...");
+});
